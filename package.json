@@ -1,0 +1,17 @@
+{
+  "name": "accountinfo",
+  "version": "1.0.0",
+  "description": "accountinfo module for the Painfull bot",
+  "main": "src/index.js",
+  "original_pain_version": "1.0.0",
+  "min_pain_version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkpain/accountinfo.git"
+  },
+  "author": "Skelly",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/sharkpain/accountinfo/issues"
+  }
+}
