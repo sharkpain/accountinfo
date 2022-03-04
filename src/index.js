@@ -24,7 +24,7 @@ module.exports = {
                 }).catch(error => {
                     if (error.message.includes("Unknown User")) {
                         message.channel.send("User not found, try mentioning them instead of using their id")
-                    } else util.apis["core-error"].api.error(error, util.client);
+                    } else util.apis["core-error"].api.error(error);
                 })
             } else {
                 if (message.mentions.users.first()) user = message.mentions.users.first();
