@@ -18,7 +18,6 @@ module.exports = {
             if(isSnowflake) {
                 message.guild.members.fetch(args[0]).then(guser => {
                     user = guser?.user
-                    console.log("id")
                     if (!user) return message.channel.send("User not found, try mentioning them instead of using their id")
                     proceed(user, message)
                     
@@ -30,10 +29,8 @@ module.exports = {
             } else {
                 if (message.mentions.users.first()) user = message.mentions.users.first();
                 if (!message.mentions.users.first()) user = null;
-                console.log("mention")
                 if (!user) {
                     user = message.author
-                    console.log("author")
                     proceed(user, message)
                 } else proceed(user, message)
             }
